@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-size: 20px;
   line-height: 1.4;
@@ -5,29 +9,42 @@ body {
   font-size: 18px;
 }
 
-aside {
+.container {
   border: 3px solid #444;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .heading,
-.detail,
+.details-title,
 .shipping {
   text-transform: uppercase;
 }
 
 .heading {
-  background-color: #ccc;
+  background-color: #ddd;
   text-align: center;
+  padding: 10px 0;
 }
 
 .shipping {
   color: #444;
   font-size: smaller;
   font-weight: bolder;
+  margin-bottom: 20px;
 }
 
-ul {
+.details-title {
+  margin-top: 30px;
+}
+
+.details-list {
   list-style: square;
+  margin-left: 5%;
+}
+
+.details-list li {
+  margin-bottom: 8px;
 }
 
 .price {
@@ -37,8 +54,10 @@ ul {
 .add-cart {
   font-size: 22px;
   background-color: #222;
+  padding: 10px;
   color: #fff;
   border: none;
+  width: 100%;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -46,6 +65,7 @@ ul {
 .add-cart:hover {
   color: #222;
   background-color: #fff;
+  border-top: 3px solid black;
 }
 
 .link-info:link,
