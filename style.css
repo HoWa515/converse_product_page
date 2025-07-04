@@ -1,0 +1,59 @@
+body {
+  font-size: 20px;
+  line-height: 1.4;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+aside {
+  border: 3px solid #444;
+}
+
+.heading,
+.detail,
+.shipping {
+  text-transform: uppercase;
+}
+
+.heading {
+  background-color: #ccc;
+  text-align: center;
+}
+
+.shipping {
+  color: #444;
+  font-size: smaller;
+  font-weight: bolder;
+}
+
+ul {
+  list-style: square;
+}
+
+.price {
+  font-size: larger;
+}
+
+.add-cart {
+  font-size: 22px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.add-cart:hover {
+  color: #222;
+  background-color: #fff;
+}
+
+.link-info:link,
+.link-info:visited,
+.link-info:active {
+  color: #000;
+}
+
+.link-info:hover {
+  text-decoration: none;
+}
