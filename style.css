@@ -12,7 +12,7 @@ body {
 .container {
   border: 3px solid #444;
   width: 60%;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .heading,
@@ -25,6 +25,20 @@ body {
   background-color: #ddd;
   text-align: center;
   padding: 10px 0;
+  position: relative;
+}
+
+.heading::before {
+  content: "sale";
+  display: inline-block;
+  letter-spacing: 2px;
+  position: absolute;
+  top: -20px;
+  left: -25px;
+  background-color: rgb(234, 33, 33);
+  color: #fff;
+  font-size: 16px;
+  padding: 4px 8px;
 }
 
 .shipping {
@@ -34,8 +48,35 @@ body {
   margin-bottom: 20px;
 }
 
+/* colors */
+.color-box {
+  margin-top: 20px;
+}
+.color {
+  display: inline-block;
+  border: 1px solid black;
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: rgb(247, 247, 106);
+}
+.blue {
+  background-color: rgb(127, 192, 249);
+}
+.orange {
+  background-color: rgb(249, 180, 62);
+}
+.purple {
+  background-color: rebeccapurple;
+}
+
 .details-title {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .details-list {
@@ -76,4 +117,8 @@ body {
 
 .link-info:hover {
   text-decoration: none;
+}
+
+img + .price::first-letter {
+  color: green;
 }
